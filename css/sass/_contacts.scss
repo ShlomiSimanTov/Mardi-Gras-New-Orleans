@@ -1,0 +1,297 @@
+// Contacts Page
+
+// User Form
+form.contact-us-form {
+    @include desktop {
+        font-size: 0.5rem;
+        background-color: rgba(13, 13, 13, 0.4);
+        padding: 20px;
+        width: 85%;
+        height: 100%;
+        margin: 10px auto;
+        text-align: center;
+        margin-bottom: 250px;
+    }
+}
+
+input[value=Reset] {
+    @include desktop {
+        font-family: $baseFont;
+        display: block;
+        padding: 5px;
+        background-color: $baseWhite;
+    }
+
+    &:hover {
+        background-color: rgb(206, 26, 26);
+        color: $baseWhite;
+        cursor: pointer;
+    }
+}
+
+input[name="user_first_name"],
+input[name="user_last_name"],
+input[name="user_email"],
+textarea[name="user_msg"] {
+    @include desktop {
+        text-shadow: 1px 1px 4px $baseWhite;
+        font-size: 1.5rem;
+        font-family: $baseFont;
+        width: 50%;
+        height: 50px;
+        text-align: center;
+        border-radius: 10px 50px 10px 50px;
+    }
+
+    @include tablet {
+        width: 90%;
+    }
+}
+
+input[name="user_first_name"]::placeholder,
+input[name="user_last_name"]::placeholder,
+input[name="user_email"]::placeholder,
+textarea[name="user_msg"]::placeholder {
+    @include desktop {
+    color: $baseWhite;
+    text-shadow: 1px 1px 4px $baseBlack;
+    font-size: clamp(0.6rem, 4vw, 1.1rem);
+    }
+}
+
+input[name="user_first_name"] {
+    background-color: rgba(148, 83, 166, 0.6);
+}
+
+input[name="user_last_name"] {
+    background-color: rgba(242, 204, 15, 0.6);
+}
+
+input[name="user_email"] {
+    background-color: rgba(140, 191, 63, 0.6);
+}
+
+textarea[name="user_msg"] {
+    background: radial-gradient(circle at center, rgba(140, 191, 63, 0.6) 10%, rgba(148, 83, 166, 0.6) 66%, rgba(242, 204, 15, 0.6) 100%);
+}
+
+input[name="user_first_name"]:hover,
+input[name="user_last_name"]:hover,
+input[name="user_email"]:hover,
+textarea[name="user_msg"]:hover {
+    @include desktop {
+        opacity: 0.85;
+    }
+}
+
+textarea[name="user_msg"] {
+    @include desktop {
+        font-size: 1rem;
+        width: 50%;
+        height: 120px;
+        text-align: left;
+        font-family: $baseFont;
+        direction: ltr;
+    }
+
+    @include tablet {
+        width: 75%;
+    }
+
+}
+
+input[name=user_submit] {
+    @include desktop {
+        font-size: 1.5rem;
+        font-family: $baseFont;
+        padding: 20px;
+        width: 30%;
+        background-color: $baseWhite;
+        border-radius: 50px 10px 50px 10px;
+    }
+
+    &:hover {
+        box-shadow: 2px 2px 2px $baseBlack;
+        transform: scale(1.1);
+        transition: 0.8s;
+        cursor: pointer;
+    }
+
+    &:active {
+        box-shadow: inset 2px 2px 2px $baseBlack;
+        text-shadow: -1px -1px 1px $baseBlack;
+        color: $baseWhite;
+        background: linear-gradient(to right, rgba(140, 191, 63, 1) 10%, rgba(148, 83, 166, 1) 66%, rgba(242, 204, 15, 1) 100%);
+        // animation: btnAnimate 7s linear infinite alternate;
+        // border: 1px solid $baseBlack;
+        transition: 0.6s;
+    }
+
+    @include tablet {
+        width: 75%;
+    }
+}
+
+form.contact-us-form img {
+    @include desktop {
+        width: 600px;
+        height: 450px;
+    }
+
+    @include tablet {
+        width: 400px;
+        height: 250px;
+    }
+
+    @include mobile {
+        width: 250px;
+        height: 150px;
+    }
+}
+
+form.contact-us-form iframe {
+    @include tablet {
+        width: 400px;
+        height: 250px;
+    }
+
+    @include mobile {
+        width: 250px;
+        height: 150px;
+    }
+}
+
+
+// HR
+
+hr.hrForm {
+    @include desktop {
+        border: 10px solid rgba(13, 13, 13, 0);
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px $baseYellow,
+            -2px -2px 10px $baseGreen;
+        animation: theHRAnimate 2s linear infinite alternate;
+    }
+}
+
+// Aside Credits
+
+aside.credits {
+    @include desktop {
+        font-size: 1rem;
+        margin: 10px 10px;
+        font-family: $baseFont;
+        color: $baseWhite;
+        text-shadow:
+            1px 1px 1px $baseBlack;
+    }
+}
+
+aside.credits a {
+    @include desktop {
+        color: $baseWhite;
+    }
+
+    &:hover {
+        opacity: 0.8;
+        text-shadow: -1px -1px 1px $baseBlack;
+    }
+}
+
+aside.credits i {
+    @include desktop {
+        font-size: 2rem;
+
+        &:hover {
+            border-radius: 50%;
+            border: 1px dashed $baseWhite;
+        }
+    }
+}
+
+// Trivia Bonus
+
+.trivia {
+    width: 430px;
+    margin: 10px auto;
+    height: 100%;
+    padding-top: 0px;
+
+    @include tablet {
+        width: 280px;
+    }
+}
+
+#quiz {
+    text-shadow: 2px 2px 4px $baseBlack;
+    background: radial-gradient(circle at center, rgba(140, 191, 63, 0.6) 10%, rgba(148, 83, 166, 0.6) 66%, rgba(242, 204, 15, 0.6) 100%);
+    padding-bottom: 60px;
+    width: 100%;
+    border: 3px dashed $baseYellow;
+    border-radius: 2%;
+    color: $baseWhite;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(13, 13, 13, 0.19), 0 6px 6px rgba(13, 13, 13, 0.23);
+}
+
+#quiz>h1 {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.questions {
+    font-family: $baseFont;
+    font-size: 28px;
+    font-weight: 700;
+    border-top: 1px solid $baseWhite;
+    border-bottom: 1px solid $baseWhite;
+    padding: 20px;
+}
+
+.answers div {
+    padding: 10px 0 0 0;
+    font-size: 16px;
+}
+
+.answers div:hover {
+    cursor: pointer;
+    color: $baseYellow;
+}
+
+.answers {
+    padding: 0px 0 10px 0px;
+}
+
+.answers div {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    border-top: 1px solid $baseBlack;
+}
+
+.answers div:first-child {
+    border: none;
+}
+
+.checker {
+    display: inline-block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.correct,
+.false {
+    background-color: #109D59;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 4px;
+    float: left;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.false {
+    background-color: #DC4437;
+}

@@ -1,0 +1,382 @@
+// Counting Down Timer
+
+div.cont {
+    @include desktop {
+        position: fixed;
+        bottom: 0%;
+        right: 5%;
+        width: 16vw;
+        height: 8vw;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px $baseBlack;
+        margin: 3vw 0;
+    }
+
+    @include tablet {
+        transform: scale(1.5);
+        right: 15%;
+        bottom: 15%;
+    }
+
+    @include mobile {
+        transform: scale(2);
+    }
+}
+
+button.button {
+    @include desktop {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: rgba(148, 83, 166, 0.6);
+        position: realtive;
+        border: 2px dashed $baseYellow;
+        border-radius: 10px;
+        outline: none;
+        transition: box-shadow 0.3s linear;
+        box-shadow: inset 0px 0px 5px $baseBlack, inset 0px 0px 0px $baseYellow;
+        cursor: pointer;
+    }
+
+    @include tablet {
+        border: 1px dashed $baseYellow;
+    }
+
+    @include mobile {
+        border: 1px dashed $baseYellow;
+    }
+
+    &:hover {
+        
+        border: 2px dashed $baseGreen;
+        box-shadow: inset 0px 0px 0px $baseBlack,
+            inset 0px 0px 105px $baseYellow;
+
+        @include tablet {
+            border: 1px dashed $baseGreen;
+        }
+
+        @include mobile {
+            border: 1px dashed $baseGreen;
+        }
+    }
+}
+
+button.button:hover a {
+    @include desktop {
+        opacity: 1;
+    }
+
+    @include tablet {
+        font-size: 1rem;
+    }
+
+    @include mobile {
+        font-size: 0.5rem;
+    }
+}
+
+button.button:hover div.blob {
+    fill: rgba(148, 83, 166, 0.6);
+}
+
+button.button:hover div.line {
+    background: rgba(140, 191, 63, 0.9);
+}
+
+div.blob {
+    @include desktop {
+        position: relative;
+        top: 10%;
+        left: 0%;
+        width: 10vw;
+        height: 10vw;
+        fill: rgba(140, 191, 63, 0.9);
+        transform-origin: 50% 50%;
+        filter: drop-shadow(4px 4px 0 $baseBlack);
+        animation: bump 5.5s ease infinite;
+    }
+}
+
+div.line {
+    @include desktop {
+        position: absolute;
+        bottom: 20%;
+        width: 20vw;
+        height: 0.7vw;
+        background: rgba(242, 204, 15, 0.7);
+        transform: rotate(-8deg);
+        box-shadow: 2px 2px 0px $baseBlack;
+        animation: line 4s ease infinite reverse;
+    }
+}
+
+div.line a {
+    @include desktop {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: $baseWhite;
+    text-shadow: 2px 2px 2px $baseBlack;
+    opacity: 0;
+    }
+}
+
+div.text {
+    @include desktop {
+        display: flex;
+        position: absolute;
+        top: 20%;
+        font-size: 4vw;
+        text-shadow: 2px 2px $baseBlack,
+            -2px 2px $baseBlack;
+    }
+
+    @include tablet {
+        text-shadow: 1px 1px $baseBlack,
+            -1px 1px $baseBlack;
+    }
+
+    @include mobile {
+        text-shadow: 1px 1px $baseBlack,
+            -1px 1px $baseBlack;
+    }
+}
+
+div.tilStart {
+    @include desktop {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        text-shadow: 2px 2px $baseBlack,
+            -2px 2px $baseBlack;
+        color: $baseWhite;
+        font-size: 1.3em;
+    }
+
+    @include tablet {
+        display: none;
+    }
+
+    @include mobile {
+        display: none;
+    }
+}
+
+div.text p:nth-child(1n) {
+    @include desktop {
+        transform: rotate(8deg);
+        animation: shake 0.5s ease infinite;
+        color: $baseYellow;
+        font-size: 0.4em;
+    }
+}
+
+div.text p:nth-child(2n) {
+    @include desktop {
+        transform: rotate(5deg);
+        animation: shake 0.5s ease-out infinite reverse;
+        color: $baseWhite;
+    }
+}
+
+div.text p:nth-child(3n) {
+    @include desktop {
+        transform: rotate(-2deg);
+        animation: shake 0.5s 0.1s ease infinite;
+    }
+}
+
+div.text p:nth-child(4n) {
+    @include desktop {
+        transform: rotate(-5deg);
+        animation: shake 0.5s ease-in infinite reverse;
+    }
+}
+
+#d,
+#h,
+#m,
+#s {
+    box-shadow: inset 1px 1px 6px #0d0d0d,
+        inset -1px -1px 6px #0d0d0d;
+    border-radius: 25%;
+}
+
+// Footer ( fixed )
+
+footer.site-footer {
+    @include desktop {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(13, 13, 13, 0.5);
+        color: $baseWhite;
+        z-index: 999;
+    }
+}
+
+footer.site-footer p {
+    @include desktop {
+        text-align: center;
+        font-family: $baseFont;
+        font-size: 1rem;
+        margin: 2px auto;
+    }
+}
+
+// Social Media Buttons
+
+div.socials {
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+}
+
+.fa {
+    @include desktop {
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 5px;
+    }
+
+    &:hover {
+        opacity: 1;
+        border-radius: 20px 20px 20px 20px;
+        transform: scale(1.3);
+        transition: 0.5s;
+    }
+}
+
+
+.fa-facebook {
+    &:hover {
+        background-color: rgba(59, 89, 152, 1);
+    }
+
+    color: $baseWhite;
+}
+
+.fa-twitter {
+    &:hover {
+        background-color: rgba(85, 172, 238, 1);
+    }
+
+    color: $baseWhite;
+}
+
+.fa-youtube {
+    &:hover {
+        background-color: rgba(187, 0, 0, 1);
+    }
+
+    color: $baseWhite;
+}
+
+.fa-instagram {
+    &:hover {
+        // background-color: rgba(18, 86, 136, 1);
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
+
+    color: $baseWhite;
+}
+
+.fa-tripadvisor {
+    &:hover {
+        background-color: rgba(0, 180, 137, 1);
+    }
+
+    color: $baseWhite;
+}
+
+// Back To Top Button
+
+.btt {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button.btt {
+    @include desktop {
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+        background-color: rgba(148, 83, 166, 0.4);
+        background-image: linear-gradient(223deg, rgba(148, 83, 166, 0.4) 15%, rgba(242, 204, 15, 0.6) 50%, rgba(140, 191, 63, 0.9) 80%);
+        border: 1px solid $baseWhite;
+        border-radius: 50%;
+        transition: 200ms;
+        margin-top: 10px;
+        margin-left: 15px;
+        box-shadow: inset 2px 2px 4px $baseWhite;
+    }
+
+    @include mobile {
+        position: fixed;
+        bottom: 15%;
+        left: 0;
+    }
+}
+
+button.btt svg {
+    @include desktop {
+    fill: $baseWhite;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+button.btt:before {
+    content: 'Back to Top';
+    position: absolute;
+    transform: translateX(30%) translateY(-5px);
+    font-size: 15px;
+    transition: 200ms;
+    color: transparent;
+    font-weight: bold;
+}
+
+button.btt:hover {
+    box-shadow: 0 1px 5px rgba(13, 13, 13, 0.2);
+    width: 45px;
+    height: 45px;
+    box-shadow: inset 2px 2px 4px $baseWhite,
+    2px 2px 4px $baseWhite;
+}
+button.btt:active {
+    box-shadow: -2px -2px 4px $baseWhite,
+    inset -2px -2px 4px $baseWhite,
+    inset -2px -2px 4px $baseWhite;
+}
+
+button.btt:hover::before {
+    color: $baseWhite;
+    text-shadow: 2px 2px 1px $baseBlack;
+}
+
+button.btt:hover svg {
+    animation: bttBounce 1.5s infinite linear;
+}
+
+button.btt:active svg {
+    animation: none;
+}
+
+button.btt:focus {
+    outline: none;
+}

@@ -1,0 +1,260 @@
+// Media Page
+
+section.wrap-media {
+    @include desktop {
+        margin: 10px auto;
+        margin-bottom: 250px;
+        background-color: rgba(13, 13, 13, 0.3);
+    }
+}
+
+div.column img,
+div.mySlides img {
+    @include desktop {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+div.column img {
+    @include desktop {
+        max-height: 300px;
+        height: 200px;
+        width: 100%;
+        border: 1px solid $baseBlack;
+    }
+}
+
+.row>.column {
+    @include desktop {
+        padding: 0 15px;
+    }
+}
+
+.row:after {
+    @include desktop {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.column {
+    @include tv {
+        width: 300px;
+    }
+
+    @include desktop {
+        float: left;
+        margin: 20px 0px;
+        width: 20%;
+    }
+
+    @include tablet {
+        width: 33%;
+    }
+
+    @include mobile {
+        width: 75%;
+        margin-left: 12.5%;
+    }
+
+}
+
+// The Modal (background)
+.modal {
+    @include desktop {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(13, 13, 13, 0.9);
+    }
+
+}
+
+// Modal Content
+.modal-content {
+    @include desktop {
+        position: relative;
+        background-color: $baseBlack;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-width: 1200px;
+    }
+}
+
+// The Close Button
+.close {
+    @include desktop {
+        color: $baseWhite;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+}
+
+.close:hover,
+.close:focus {
+    @include desktop {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.mySlides {
+    @include desktop {
+        display: none;
+    }
+}
+
+.cursor {
+    @include desktop {
+        cursor: pointer;
+    }
+}
+
+// Next & Previous Buttons
+.prev,
+.next {
+    @include desktop {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: $baseWhite;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+}
+
+.next {
+    @include desktop {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+}
+
+.prev:hover,
+.next:hover {
+    @include desktop {
+        background-color: rgba(13, 13, 13, 0.8);
+    }
+}
+
+// Number/Number Text
+.numbertext {
+    @include desktop {
+        color: $baseWhite;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+}
+
+.main-gallery img {
+    @include desktop {
+        margin-bottom: -4px;
+    }
+}
+
+.caption-container {
+    @include desktop {
+        text-align: center;
+        background-color: $baseBlack;
+        padding: 2px 16px;
+        color: $baseWhite;
+    }
+}
+
+.demo {
+    @include desktop {
+        opacity: 0.6;
+    }
+}
+
+.active,
+.demo:hover {
+    @include desktop {
+        opacity: 1;
+    }
+}
+
+.main-gallery img.hover-shadow {
+    @include desktop {
+        transition: 0.3s;
+    }
+}
+
+.hover-shadow:hover {
+    @include desktop {
+        transform: scale(1.05);
+        transition: 0.5s;
+        box-shadow: 4px 4px 8px $baseBlack,
+            6px 6px 20px $baseBlack,
+            -6px -6px 20px $baseBlack;
+    }
+}
+
+.hover-shadow:active {
+    @include desktop {
+        transform: scale(0.9);
+        transition: 0.5s;
+    }
+}
+
+
+// Videos
+
+h1.video-header {
+    @include desktop {
+        font-size: 6rem;
+        font-family: $headerSecondFont;
+        text-align: center;
+        margin: 20px auto;
+        color: $baseWhite;
+        text-shadow: 5px 5px 5px $baseBlack,
+            -5px -5px 5px $baseBlack;
+        animation: theHeaderAnimate 3s linear infinite alternate;
+    }
+
+    @include tablet {
+        font-size: 4rem;
+    }
+}
+
+section.videos-section {
+    @include desktop {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 220px;
+        flex-wrap: wrap;
+        background-color: rgba(13, 13, 13, 0.3);
+    }
+}
+
+div.wrap-videos iframe {
+    @include desktop {
+        width: 350px;
+        height: 200px;
+        padding: 0 15px;
+        margin: 5px auto;
+    }
+}

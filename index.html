@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Title -->
+    <title>Mardi Gras New Orleans</title>
+    <link rel="shortcut icon" href="images/logo2.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- S-Media Buttons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- Body - Home Page -->
+
+<body class="color-body">
+
+    <!-- Header - Home Page -->
+    <header>
+
+        <!-- Menu Button -->
+        <div class="hamburger">
+            &#9776;
+        </div>
+
+        <!-- Main Menu -->
+        <nav class="main-menu" id="main-menu">
+
+            <!-- logo -->
+            <a href="index.html">
+                <img src="images/logo2.png" class="logo" alt="Logo">
+            </a>
+
+            <ul class="clearfix">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Welcome Header & Vid -->
+        
+        <section class="welcome-section">
+        
+            <video id="background-video" autoplay loop muted poster="images/bg.jpg">
+                <source src="videos/video1.mp4" type="video/mp4">
+            </video>
+            <h2 class="welcome-header">Welcome To The</h2>
+            <div class="welcome-msg">
+                MARDI GRAS
+                <br>
+                NEW ORLEANS
+            </div>
+        
+        </section>
+
+        <section class="homeContentWrapper">
+				<div>
+						<p>
+							<a style="font-size: 1.6em;color: #8cbf3f; text-shadow: 1px 1px 3px #0d0d0d;" href="about.html">
+                                What is a Mardi Gras Indian?
+                            </a>
+							<a style="color: #0d0d0d; text-shadow: 1px 1px 3px #f2f2f2; font-size: 1.2em;" href="#wrap-contents">
+                                Where are the best places for families to enjoy the fun?
+                            </a>
+							<a style="font-size: 1.5em; color: #9453a6; text-shadow: -1px 1px 1px #0d0d0d;" href="#wrap-contents">
+                                Are there still hotel rooms available?
+                            </a>
+							<a style="font-size: 1.3em;color: #8cbf3f; text-shadow: 1px 1px 3px #0d0d0d;" href="faq.html">
+                                Which krewes have the best throws?
+                            </a>
+							<a style="font-size: 1.6em; color: #0d0d0d; text-shadow: 1px 1px 3px #f2f2f2;">
+                                What are the chances of catching a Zulu coconut?
+                            </a>
+						</p>
+                        <br>
+						<p style="color: #f2f2f2; text-shadow: 1px 1px 3px #0d0d0d;">You'll find the answers to all these questions and more right here at MardiGrasNewOrleans.com – your catch-all for everything Carnival. Don your purple, green and gold and join us in New Orleans this February for "The Greatest Free Show on Earth."
+                        </p>
+                        <br><br>
+						<p>
+                            <strong style="font-size: 1.6em; color: #0d0d0d; text-shadow: 1px 1px 3px #f2f2f2;">Mardi Gras 2023 is Tuesday, February 21. We're counting down the minutes.</strong>
+                        </p>
+                </div>
+        </section>
+
+        <!-- Welcome Gallery -->
+
+        <section class="wrap-welcome-gallery">
+
+            <div class="welcome-imgBox reveal fade-left">
+                <img src="images/gallery1.jpg" alt="A man with mask" onclick="openModal();currentSlide(1)">
+                <h3>Around Mardi Gras</h3>
+                <button class="readMoreBtn" style="background-color: #8cbf3f;"><a href="#wrap-contents">Read More</a></button>
+            </div>
+
+            <div class="welcome-imgBox reveal fade-left">
+                <img src="images/gallery2.jpg" alt="Two masks on a purple table" onclick="openModal();currentSlide(2)">
+                <h3>What is Mardi Gras ?</h3>
+                <button class="readMoreBtn" style="background-color: #9453a6;"><a href="about.html" target="_blank">Read More</a></button>
+            </div>
+
+            <div class="welcome-imgBox reveal fade-bottom">
+                <img src="images/gallery3.jpg" alt="A woman with an umbrella" onclick="openModal();currentSlide(3)">
+                <h3>Wrap Mardi Gras Gallery</h3>
+                <button class="readMoreBtn" style="background-color: #f2cc0f;"><a href="media.html" target="_blank">Read More</a></button>
+            </div>
+
+            <div class="welcome-imgBox reveal fade-right">
+                <img src="images/gallery4.jpg" alt="Two guys with clown mask" onclick="openModal();currentSlide(4)">
+                <h3>Read Mardi Gras FAQs</h3>
+                <button class="readMoreBtn" style="background-color: #9453a6;"><a href="faq.html" target="_blank">Read More</a></button>
+            </div>
+
+            <div class="welcome-imgBox reveal fade-right">
+                <img src="images/gallery5.jpg" alt="back of a girl with colorful clothes" onclick="openModal();currentSlide(5)">
+                <h3>Write To Us</h3>
+                <button class="readMoreBtn" style="background-color: #8cbf3f;"><a href="contacts.html" target="_blank">Read More</a></button>
+            </div>
+
+            <div class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 5</div>
+                            <img src="images/gallery1.jpg">
+                            <button onclick="closeModal()" class="readMoreBtn" style="background-color: #8cbf3f;"><a href="#wrap-contents">Around Mardi Gras</a></button>
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 5</div>
+                            <img src="images/gallery2.jpg">
+                            <button class="readMoreBtn" style="background-color: #9453a6;"><a href="about.html" target="_blank">What is Mardi Gras?</a></button>
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 5</div>
+                            <img src="images/gallery3.jpg">
+                            <button class="readMoreBtn" style="background-color: #f2cc0f;"><a href="media.html" target="_blank">Wrap Mardi Gras Gallery</a></button>
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="images/gallery4.jpg">
+                            <button class="readMoreBtn" style="background-color: #9453a6;"><a href="faq.html" target="_blank">Read Mardi Gras FAQs</a></button>
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 5</div>
+                            <img src="images/gallery5.jpg">
+                            <button class="readMoreBtn" style="background-color: #8cbf3f;"><a href="contacts.html" target="_blank">Write To Us</a></button>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+                        <div class="column">
+                            <img class="demo cursor" src="images/gallery1.jpg" onclick="currentSlide(1)"
+                                alt="Meet everything around New Orleans">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/gallery2.jpg" onclick="currentSlide(2)"
+                                alt="Read about Mardi Gras and his history">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/gallery3.jpg" onclick="currentSlide(3)"
+                                alt="Wrap Images and Videos Galley">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/gallery4.jpg" onclick="currentSlide(4)"
+                                alt="Get ready to the next Mardi Gras">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/gallery5.jpg" onclick="currentSlide(5)"
+                                alt="Contact us for any issue">
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Main - Home Page -->
+
+    <main>
+
+        <!-- LaToya Invitation -->
+
+        <div class="invite-img">
+            <img src="images/LaToya.png" alt="Picture of LaToya Cantrell, Mayor of New Orleans"
+                title="LaToya Cantrell, Mayor of New Orleans" width="240" height="330" onclick="go2('about.html#latoya')">
+
+            <div class="invite-par reveal fade-left">
+                <h2 class="welcome-header" style="font-size: 2.3rem;">A Special Invitation From The Honorable LaToya Cantrell</h2>
+                <p class="reveal fade-left">As Mayor of the great City of New Orleans, I invite you to visit our city to experience the
+                    excitement of Mardi Gras!</p>
+                <br>
+                <p class="reveal fade-left">
+                    The Carnival season officially begins each year on Jan. 6 -- the Feast of the Epiphany, also called
+                    Twelfth Night or Kings’ Day.
+                    <br>
+                    Traditional balls are held in the weeks leading up to the big event.
+                    <br>
+                    Spectacular parades with colorful, creative floats start rolling before Mardi Gras Day.
+                    <br>
+                    Our private
+                    Carnival clubs, called krewes, take on royalty status and throw beads, doubloons and toys to parade
+                    goers.
+                    <br>
+                    Visitors quickly learn to say, "Throw me something mister!"
+                    The culmination of Mardi Gras in New Orleans begins early on Mardi Gras
+                    <br>
+                    Day when the Zulu Social Aid
+                    & Pleasure Club and the Rex Organization parade through the city.
+                    <br>
+                    Music, food and elaborate costumes
+                    add to the fun-filled day of excitement for revelers of all ages.
+                    <br>
+                    New Orleans, with its unmatched culture and world-famous music and cuisine, is an exciting place to
+                    be at any time of the year.
+                    <br>
+                    We invite everyone to experience Mardi Gras at least once in their
+                    lifetime.
+                    <br>
+                    Make your plans now to be a part of this great tradition and see firsthand why we say,
+                    <br>
+                    "Laissez les bon temps rouler!"
+                    <br><br>
+                    Sincerely,
+                    <br>
+                    LaToya Cantrell
+                    <br>
+                    Mayor of New Orleans
+                </p>
+            </div>
+        </div>
+
+        <!-- Wrap Contents -->
+
+        <section class="wrap-contents" id="wrap-contents">
+            <h2 class="content-header">Meet Everything Around Mardi Gras in New Orleans</h2>
+            <div class="content">
+                <div class="imgBox">
+                    <a href="images/walk-ons.jpg" target="_blank">
+                        <img src="images/walk-ons.jpg" alt="Walk-On's Bistreaux and Bar Picture"
+                            title="Walk-On's Bistreaux and Bar">
+                    </a>
+                    <h3>Walk-On's Bistreaux and Bar</h3>
+                </div>
+                <div class="parBox">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13827.988113389956!2d-90.0747403!3d29.9507641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1ca853ada288eb0d!2sWalk-On&#39;s%20Sports%20Bistreaux%20-%20New%20Orleans!5e0!3m2!1siw!2sil!4v1647113409492!5m2!1siw!2sil"
+                        allowfullscreen="" loading="lazy"></iframe>
+                    <p>
+                        More than a Restaurant
+                        Craveable, Louisiana-inspired food, Gameday vibes, and a passion for our Communities; at
+                        Walk-On's there's something for the whole family to enjoy. Walk-On’s creates an environment that
+                        fosters growth and belonging for all, where the team is bigger than the individual, where we
+                        exceed expectations & positively impact every community we serve.
+                    </p>
+                    <button class="visitBtn" style="background-color:#9453a6;"><a href="https://walk-ons.com/" target="_blank">Visit Site</a></button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imgBox">
+                    <a href="images/sheraton.jpg" target="_blank"><img src="images/sheraton.jpg"
+                            alt="Sheraton New Orleans Hotel Picture" title="Sheraton New Orleans Hotel"></a>
+                    <h3>Sheraton New Orleans Hotel</h3>
+                </div>
+                <div class="parBox">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.9590222677853!2d-90.0657364150538!3d29.951857281915977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a60cdbbc992b%3A0xd5f48b1fa6b43f2f!2z16nXqNeq15XXnyDXoNeZ15Ug15DXldeo15zXmdeg16EsIDUwMCBDYW5hbCBTdCwgTmV3IE9ybGVhbnMsIExBIDcwMTMwLCDXkNeo16bXldeqINeU15HXqNeZ16o!5e0!3m2!1siw!2sil!4v1647113615402!5m2!1siw!2sil"
+                        allowfullscreen="" loading="lazy"></iframe>
+                    <p>On the historic Canal Street streetcar line bordering the French Quarter, the hotel is steps from
+                        world-famous restaurants, legendary nightlife, prime shopping and Harrah's Casino. Sheraton New
+                        Orleans Hotel offers two restaurants and a bar, a 24-hour fitness center, rooftop pool,
+                        expansive meeting space, amazing downtown and river views and Sheraton Sleep Experience Bed for
+                        a restful slumber.</p>
+                    
+                    <button class="visitBtn" style="background-color:#f2cc0f;"><a
+                            href="https://www.neworleans.com/listing/sheraton-new-orleans-hotel/767/"
+                            target="_blank">Visit Site</a></button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imgBox">
+                    <a href="images/ace.jpg" target="_blank"><img src="images/ace.jpg"
+                            alt="Ace Hotel New Orleans Picture" title="Ace Hotel New Orlean"></a>
+                    <h3>Ace Hotel New Orleans</h3>
+                </div>
+                <div class="parBox">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.0791118014477!2d-90.06998371505378!3d29.948402981917393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a674f96e57d7%3A0x526bd0fd39d09879!2sAce%20Hotel%20New%20Orleans!5e0!3m2!1siw!2sil!4v1647113839379!5m2!1siw!2sil"
+                        allowfullscreen="" loading="lazy"></iframe>
+                    <p>The New Orleans Sightseeing Day Pass is your skeleton key to the city, unlocking your choice of
+                        day trips ‘cross the crescent — from gator-spotting sojourns through the Manchac Swamp to French
+                        Quarter ghost tours. Book three or more days with the rate code KEYS and select your New Orleans
+                        Sightseeing Pass (In either three- or four-day varieties — pick your pleasure), free parking and
+                        late check out. Reservations may be required for some attractions (hotel is not responsible or
+                        liable for securing attraction reservations, hours, or availability).</p>
+                    
+                    <button class="visitBtn" style="background-color:#8cbf3f;"><a href="https://acehotel.com/new-orleans/" target="_blank">Visit
+                            Site</a></button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imgBox">
+                    <a href="images/rcl.png" target="_blank"><img src="images/rcl.png"
+                            alt="The Ritz-Carlton, New Orleans Picture" title="The Ritz-Carlton, New Orleans"></a>
+                    <h3>The Ritz-Carlton, New Orleans</h3>
+                </div>
+                <div class="parBox">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.8547998314884!2d-90.0690226150539!3d29.954854881915047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a60b960f72af%3A0xe568a57201320fd4!2sThe%20Ritz-Carlton%2C%20New%20Orleans!5e0!3m2!1siw!2sil!4v1647113930958!5m2!1siw!2sil"
+                        allowfullscreen="" loading="lazy"></iframe>
+                    <p>WITHIN A HISTORIC BEAUX ARTS BUILDING IN NEW ORLEANS’ FRENCH QUARTER, A HOTEL OFFERS LUXURY WITH
+                        A LOCAL TOUCH. <br>
+
+                        Rich in history and personality, New Orleans is unlike any other US city. Honoring its spirit
+                        and elegance, The Ritz-Carlton, New Orleans invites visitors to its French Quarter retreat, set
+                        within a 1908 Beaux Arts building. Here, one can bask in the silence of the hotel’s beautiful
+                        courtyard, experience the mysticism of the city through the spa’s Voodoo Ritual or learn how to
+                        play the trumpet with in-house jazz musician Jeremy Davenport.</p>
+                    
+                    <button class="visitBtn" style="background-color:#9453a6;"><a href="https://www.ritzcarlton.com/en/hotels/new-orleans"
+                            target="_blank">Visit Site</a></button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imgBox">
+                    <a href="images/p402.png" target="_blank"><img src="images/p402.png"
+                            alt="Premium Parking - P402 Picture" title="Premium Parking - P402"></a>
+                    <h3>Premium Parking - P402</h3>
+                </div>
+                <div class="parBox">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13827.578330487451!2d-90.05599632321766!3d29.953710698861585!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf125c95ac5a402fc!2sPremium%20Parking%20-%20P402!5e0!3m2!1siw!2sil!4v1646936003582!5m2!1siw!2sil"
+                        allowfullscreen="" loading="lazy"></iframe>
+                    <p>We live at the intersection of parking and technology. We are a technology company, a parking
+                        operator, and network of parking advisors to bring it all together. We built our own custom
+                        cloud-based parking management software to run our locations—now you can use it to upgrade
+                        yours. We offer an enterprise-class agile solution that's simpler, more powerful and more
+                        affordable than the disconnected hardware and app-based offerings of the legacy parking industry
+                        giants and venture capital dorm room startups.</p>
+                    
+                    <button class="visitBtn" style="background-color:#f2cc0f;"><a href="https://www.premiumparking.com/P0402" target="_blank">Visit
+                            Site</a></button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imgBox">
+                    <a href="images/LCM.jpg" target="_blank"><img src="images/LCM.jpg"
+                            alt="Louisiana Children's Museum Picture" title="Louisiana Children's Museum"></a>
+                    <h3>Louisiana Children's Museum</h3>
+                </div>
+                <div class="parBox">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.6375632228346!2d-90.09179191505473!3d29.98984438190215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a6717c9422b9%3A0xdab5e1375814c8a7!2z157XldeW15nXkNeV158g15TXmdec15PXmdedINep15wg15zXldeQ15nXlteZ15DXoNeU!5e0!3m2!1siw!2sil!4v1647114111665!5m2!1siw!2sil"
+                        allowfullscreen="" loading="lazy"></iframe>
+                    <p>
+                        A Museum on a Mission
+                        When you make a child’s potential visible, wonderful things happen. So we created a place where
+                        kids use play, shared exploration, and conversation to connect with the people and world around
+                        them. A place where kids can be the amazing humans they are. A place where wonderful things
+                        happen daily.
+
+                        The LCM Vision
+                        What you experience as a child shapes the adult you become. That means you can change a child’s
+                        entire trajectory by giving them access to safe, innovative, and educational play experiences.
+                        And that’s the stuff we live for. We’re here to show children they matter. We exist to
+                        strengthen and support families. And we’re going to have so much fun while we do it.
+                    </p>
+                    
+                    <button class="visitBtn" style="background-color:#8cbf3f;"><a href="https://lcm.org/" target="_blank">Visit Site</a></button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imgBox">
+                    <a href="images/mod.png" target="_blank"><img src="images/mod.png" alt="Museum of Death Picture"
+                            title="Museum of Death"></a>
+                    <h3>Museum of Death</h3>
+                </div>
+                <div class="parBox">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.8207453874!2d-90.06752281505395!3d29.95583428191469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a60c063ddb8d%3A0x9e023a6d8578ffb1!2sMuseum%20of%20Death%20New%20Orleans!5e0!3m2!1siw!2sil!4v1647114204916!5m2!1siw!2sil"
+                        allowfullscreen="" loading="lazy"></iframe>
+                    <p>The World Famous Museum of Death was founded in June, 1995 when JD Healy and Cathee Shultz
+                        decided to fill the void in death education in this country and made death their life’s work.
+
+                        Evolving from the controversial Rita Dean art gallery, the Museum of Death was originally
+                        located in San Diego’s 1st mortuary- the building itself once owned by Wyatt Earp. Now located
+                        in Hollywood, California and New Orleans, Louisiana, the Museum of Death houses the world’s
+                        largest collection of serial killer artwork, antique funeral ephemera, mortician and coroners
+                        instruments, Manson Family memorabilia, pet death taxidermy, crime scene photographs and so much
+                        more! Each location is entirely unique as the museum does not feature any replicas or duplicates
+                        of the exhibits or artifacts.</p>
+                    
+                    <button class="visitBtn" style="background-color:#9453a6;"><a href="http://www.museumofdeath.net" target="_blank">Visit
+                            Site</a></button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imgBox">
+                    <a href="images/thehm.jpg" target="_blank"><img src="images/thehm.jpg" alt="Haunted Museum Picture"
+                            title="Haunted Museum"></a>
+                    <h3>Haunted Museum</h3>
+                </div>
+                <div class="parBox">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.6154585209006!2d-90.06484131505408!3d29.961737681912343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a60f91c98711%3A0x717c4323660dc714!2sBloody%20Mary&#39;s%20Tours%2C%20Haunted%20Museum%20%26%20Voodoo%20Shop!5e0!3m2!1siw!2sil!4v1647114253183!5m2!1siw!2sil"
+                        allowfullscreen="" loading="lazy"></iframe>
+                    <p>Tour the Haunted Museum in New Orleans
+                        Join us for a spirited adventure through Zak Bagans’ The Haunted Museum in New Orleans, as seen on
+                        the Travel Channel’s Ghost Adventures! See original collectibles from haunted sites and hear the
+                        bone-chilling stories of the paranormal activity that surrounds them. This isn’t your average
+                        haunted house in New Orleans; this is the go-to destination for paranormal enthusiasts and ghost
+                        hunters wanting to see pieces from the “Demon House,” Dr. Kevorkian’s death van, and even the
+                        Dybbuk Box. Come take a tour of the Haunted Museum!</p>
+                    
+                    <button class="visitBtn" style="background-color:#f2cc0f;"><a href="https://thehauntedmuseum.com/" target="_blank">Visit
+                            Site</a></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer - Home Page -->
+
+    <footer class="site-footer">
+
+        <!-- Timer -->
+
+        <div class='cont'>
+            <button class='button' onclick="go2('contacts.html#quiz')">
+                <div class='blob'>
+                    <svg xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' xmlns='http://www.w3.org/2000/svg'
+                        viewBox='0 0 310 350'>
+                        <path
+                            d='M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111 c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z' />
+                    </svg>
+                </div>
+                <div class='line'><a href="#quiz">GO TO QUIZ!</a></div>
+                <div class="tilStart">‘TIL MARDI GRAS</div>
+                <div class='text'>
+                    <p id="d"></p>
+                    <p id="dd"></p>
+                    <p id="h"></p>
+                    <p id="hh"></p>
+                    <p id="m"></p>
+                    <p id="mm"></p>
+                    <p id="s"></p>
+                    <p id="ss"></p>
+                </div>
+            </button>
+        </div>
+
+        <!-- S-Media Buttons -->
+
+        <div class="socials">
+            <a href="https://www.facebook.com/MardiGrasNewOrleans" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/MardiGrasNOLA" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/mardigrasneworleans/" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q" target="_blank"
+                class="fa fa-youtube"></a>
+            <a href="https://www.tripadvisor.com/Profile/MardiGrasNOLA" target="_blank" class="fa fa-tripadvisor"></a>
+
+            <!-- Back To Top Button -->
+
+            <button href="#top" class="btt"><a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24">
+                        <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+                        </svg></a></button>
+        </div>
+
+        <p>All rights reserved 2022 Shlomi Siman-Tov &copy;</p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
+    <script src="js/mediaScript.js"></script>
+
+
+    <!-- JQuery for Menu-Button -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+        $(".hamburger").click(function () {
+            $(".main-menu").slideToggle(1000);
+        });
+    </script>
+
+    <!-- Go to Quiz -->
+    <script>
+        function go2(url) {
+            location.href = url;
+            // document.location = url;
+        }
+    </script>
+
+</body>
+
+</html>

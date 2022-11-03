@@ -1,0 +1,202 @@
+// Home Page
+
+// Main - Home Page
+
+// LaToya Invitation
+
+div.invite-img {
+    @include desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include tablet {
+        display: block;
+        text-align: center;
+    }
+}
+
+div.invite-img img {
+    @include desktop {
+        cursor: pointer;
+        border: 5px solid $baseBlack;
+        box-shadow: 15px 15px 10px $baseBlack,
+            -15px -15px 10px $baseBlack;
+
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 1s;
+    }
+}
+
+div.invite-par {
+    @include desktop {
+        background: linear-gradient(223deg, rgba(148, 83, 166, 0.3) 25%, rgba(242, 204, 15, 0.4) 34%, rgba(140, 191, 63, 0.6) 90%);
+        width: auto;
+        height: 100%;
+        color: $baseBlack;
+        text-shadow: -1px -1px 4px $baseWhite,
+            1px 1px 4px $baseWhite;
+        font-size: 1rem;
+        padding: 20px;
+        border: 5px dashed $baseBlack;
+        box-shadow: 15px 15px 10px $baseBlack,
+            -15px -15px 10px $baseBlack;
+    }
+
+    &:hover {
+        background: linear-gradient(223deg, rgba(148, 83, 166, 0.4) 25%, rgba(242, 204, 15, 0.6) 34%, rgba(140, 191, 63, 0.9) 90%);
+    }
+}
+
+
+// Wrap-Content
+
+h2.content-header {
+    @include desktop {
+        font-size: 4rem;
+        font-family: $headerSecondFont;
+        text-align: center;
+        margin-top: 50px;
+        color: $baseWhite;
+        text-shadow: 5px 5px 1px $baseBlack,
+            -5px -5px 1px $baseBlack;
+        animation: theHeaderAnimate 3s linear infinite alternate;
+    }
+
+    @include tablet {
+        font-size: 2.5rem;
+    }
+}
+
+section.wrap-contents {
+    @include desktop {
+        background-color: rgba(13, 13, 13, 0.4);
+        border: 5px dashed $baseBlack;
+        box-shadow: 15px 15px 10px $baseBlack,
+            -15px -15px 10px $baseBlack;
+        position: relative;
+        width: 75%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 30px;
+        margin: 10px auto;
+    }
+}
+
+div.content {
+    @include desktop {
+        position: relative;
+        max-width: 300px;
+        height: 215px;
+        background: rgba(242, 242, 242, 0.8);
+        margin: 80px 10px;
+        padding-top: 1px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        transition: 1s ease-in-out;
+    }
+
+    &:hover {
+        height: auto;
+    }
+}
+
+div.imgBox {
+    @include desktop {
+        position: relative;
+        width: 260px;
+        height: 215px;
+        top: -60px;
+        left: 20px;
+        z-index: 1;
+        box-shadow: 0 5px 20px rgba(13, 13, 13, 0.2);
+    }
+}
+
+div.imgBox img {
+    @include desktop {
+        height: 215px;
+        max-width: 100%;
+        border-radius: 4px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        transition: transform 1.6s;
+    }
+}
+
+
+div.imgBox h3 {
+    @include desktop {
+        text-align: center;
+        font-family: $headerFont;
+        font-size: 1.3rem;
+    }
+}
+
+div.parBox iframe {
+    @include desktop {
+        border: 0;
+        height: 250px;
+        width: 250px;
+    }
+}
+
+div.parBox {
+    @include desktop {
+        font-family: $baseFont;
+        position: relative;
+        margin-top: -140px;
+        padding: 10px 15px;
+        text-align: center;
+        color: #111;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+div.content:hover .parBox {
+    @include desktop {
+        visibility: visible;
+        opacity: 1;
+        margin-top: -40px;
+        transition-delay: 0.3s;
+    }
+}
+
+button.visitBtn {
+    @include desktop {
+        font-family: $headerFont;
+        width: 100%;
+        background-color: $basePurple;
+        font-size: 1.5em;
+        padding: 5px auto;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px rgba(13, 13, 13, .5);
+    }
+
+    &:hover {
+        box-shadow: 3px 3px 3px rgba(13, 13, 13, 2.5);
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+    &:active {
+        box-shadow: inset 3px 3px 3px rgba(13, 13, 13, .5);
+    }
+}
+
+button.visitBtn a {
+    @include desktop {
+        color: $baseWhite;
+        text-decoration: none;
+    }
+}

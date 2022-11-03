@@ -1,0 +1,183 @@
+// Logo
+
+img.logo {
+    @include desktop {
+        width: 100px;
+        animation: logo 1s linear infinite alternate;
+
+        &:hover {
+            animation: none;
+            transform: scale(1.4);
+        }
+    }
+
+    @include tablet {
+        display: none;
+    }
+
+    @include mobile {
+        display: none;
+    }
+}
+
+
+// Hamburger Button
+
+div.hamburger {
+    @include desktop {
+        width: 1rem;
+        font-size: 3em;
+        color: $baseBlack;
+        font-weight: bold;
+        cursor: pointer;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        display: none;
+    }
+
+    @include tablet {
+        display: block;
+    }
+}
+
+
+// Main-Menu
+
+nav.main-menu {
+    @include desktop {
+        background-color: rgba(13, 13, 13, 0.4);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        padding: 20px;
+        width: 100%;
+        top: 0px;
+        z-index: 999;
+        transition: top 0.5s;
+    }
+
+    @include tablet {
+        display: none;
+    }
+}
+
+nav.main-menu ul {
+    @include desktop {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @include tablet {
+        display: block;
+    }
+}
+
+nav.main-menu ul li {
+    @include desktop {
+        border: 1px solid $baseBlack;
+        box-shadow: 1px 1px 5px $baseBlack,
+            -1px -1px 5px $baseBlack;
+        border-radius: 50px 10px 50px 10px;
+        padding: 5px 25px;
+        margin: 5px 10px;
+        display: block;
+
+        &:hover {
+            box-shadow: 1px 1px 15px $baseBlack,
+                -1px -1px 15px $baseBlack;
+            text-shadow: 10px 10px 14px $baseWhite,
+                -10px -10px 14px $baseYellow;
+            transform: scale(1.2) rotate(6deg);
+            color: $baseYellow;
+            transition: 0.5s;
+            animation: menuBgcAnimate 2s linear infinite alternate;
+
+            &:nth-child(3) {
+                background-color: $baseYellow;
+            }
+
+            &:nth-child(1),
+            &:nth-child(5) {
+                background-color: $baseGreen;
+            }
+
+            &:nth-child(2),
+            &:nth-child(4) {
+                background-color: $basePurple;
+            }
+        }
+
+        &:nth-child(3) {
+            background-color: rgba(242, 204, 15, 0.5);
+        }
+
+        &:nth-child(1),
+        &:nth-child(5) {
+            background-color: rgba(140, 191, 63, 0.5);
+        }
+
+        &:nth-child(2),
+        &:nth-child(4) {
+            background-color: rgba(148, 83, 166, 0.5);
+        }
+
+    }
+
+    @include tablet {
+        &:hover {
+            transform: scale(1.05) rotate(0deg);
+
+            &:nth-child(3) {
+                background-color: $baseYellow;
+            }
+
+            &:nth-child(1),
+            &:nth-child(5) {
+                background-color: $baseGreen;
+            }
+
+            &:nth-child(2),
+            &:nth-child(4) {
+                background-color: $basePurple;
+            }
+        }
+    }
+}
+
+
+nav.main-menu ul li a {
+    @include desktop {
+        color: $baseWhite;
+        font-family: $headerSecondFont;
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-decoration: none;
+        text-shadow: -2px -2px 4px $baseBlack,
+            2px 2px 14px $baseBlack;
+
+        &:hover {
+            text-shadow: 2px 2px 4px $baseBlack,
+                10px 10px 14px $baseGreen,
+                -10px -10px 14px $baseYellow;
+            transform: scale(1.2) rotate(6deg);
+            color: $baseYellow;
+            transition: 0.5s;
+            animation: menuColorAnimate 2s linear infinite alternate;
+        }
+    }
+
+    @include tablet {
+        display: block;
+        text-align: center;
+        animation: none;
+
+        &:hover {
+            transform: scale(1.4) rotate(-3.5deg);
+        }
+    }
+}

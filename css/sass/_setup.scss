@@ -1,0 +1,90 @@
+// Google Fonts - Pattaya & Roboto & Henny Penny
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto+Serif:wght@700&display=swap');
+
+// All Pages
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Serif', serif;
+}
+
+// Bodies
+// Colorful -
+body.color-body {
+    background: url(../images/bigpic1.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+// Black & White -
+body.bw-body {
+    background: url(../images/bigpic1bw.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+// Global Vars
+$baseFont:'Roboto Serif',
+serif;
+$headerFont:'Pattaya',
+sans-serif;
+$headerSecondFont: 'Henny Penny',
+cursive;
+$baseBlack: rgba(13, 13, 13, 1); // #0d0d0d;
+$baseWhite: rgba(242, 242, 242, 1); // #f2f2f2;
+$baseYellow:rgba(242, 204, 1, 1); // #f2cc0f;
+$baseGreen: rgba(140, 191, 6, 1); // #8cbf3f;
+$basePurple:rgba(148, 83, 166, 1); // #9453a6;
+
+// Global Tags & Classes
+h1,
+h2,
+h3 {
+    font-family: $headerSecondFont;
+}
+
+h4,
+h5,
+h6 {
+    font-family: $headerFont;
+}
+
+h1.pageHeader {
+    font-size: 7rem;
+    text-align: center;
+    margin: 20px auto;
+    margin-top: 200px;
+    color: $baseWhite;
+    text-shadow: 5px 5px 5px $baseBlack,
+        -5px -5px 5px $baseBlack;
+    animation: theHeaderAnimate 3s linear infinite alternate;
+}
+
+// Clearfix 
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+// Fade Effect (Animate + JS)
+.reveal {
+    opacity: 0;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+.active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+}
+
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}

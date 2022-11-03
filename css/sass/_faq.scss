@@ -1,0 +1,76 @@
+// FAQ Page
+
+section.faqs {
+    @include desktop {
+        margin-bottom: 350px;
+        text-align: center;
+    }
+}
+
+button.accordion {
+    @include desktop {
+        font-family: $headerFont;
+        background-color: $baseGreen;
+        color: $baseBlack;
+        cursor: pointer;
+        padding: 18px;
+        width: 75%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        font-size: 1.6rem;
+        text-shadow: -1px -1px 4px $baseWhite,
+            1px 1px 4px $baseWhite;
+        box-shadow: -1px -1px 4px $baseWhite,
+            1px 1px 4px $baseWhite;
+    }
+}
+
+button.accordion:nth-child(3n-1) {
+    background-color: $basePurple;
+}
+
+button.accordion:nth-child(3n-2) {
+    background-color: $baseYellow;
+}
+
+button.active,
+button.accordion:hover {
+    color: $baseWhite;
+    text-shadow: -1px -1px 4px $baseBlack,
+        1px 1px 4px $baseBlack;
+    transform: scale(1.05);
+    transition: 0.4s ease-in-out;
+}
+
+button.accordion:after {
+    content: '\02795';
+    color: $baseBlack;
+    float: right;
+    margin-left: 5px;
+}
+
+button.active:after {
+    content: "\2796";
+}
+
+div.panel {
+    @include desktop {
+        font-family: $baseFont;
+        color: $baseWhite;
+        margin: 0px auto;
+        width: 75%;
+        padding: 0 18px;
+        background-color: rgba(13, 13, 13, 0.6);
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.2s ease-out;
+    }
+}
+
+div.panel p {
+    @include desktop {
+        padding: 20px;
+    }
+}

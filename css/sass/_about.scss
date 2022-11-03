@@ -1,0 +1,125 @@
+// About Page
+
+//  About 
+
+section.about-us {
+    @include desktop {
+        margin: 150px auto;
+        margin-top: 0;
+        width: 75%;
+    }
+}
+
+div.about {
+    @include desktop {
+        margin: auto;
+        display: flex;
+        background: linear-gradient(223deg, rgba(148, 83, 166, 0.3) 25%, rgba(242, 204, 15, 0.4) 34%, rgba(140, 191, 63, 0.6) 90%);
+        border: 5px dashed $baseBlack;
+        box-shadow: 15px 15px 10px $baseBlack,
+            -15px -15px 10px $baseBlack;
+        padding: 1em;
+        color: $baseBlack;
+        text-shadow: -1px -1px 4px $baseWhite,
+            1px 1px 4px $baseWhite;
+
+        &:hover {
+            background: linear-gradient(223deg, rgba(148, 83, 166, 0.4) 25%, rgba(242, 204, 15, 0.6) 34%, rgba(140, 191, 63, 0.9) 90%);
+        }
+
+        &:nth-child(odd) {
+            background: linear-gradient(223deg, rgba(140, 191, 63, 0.6) 25%, rgba(242, 204, 15, 0.4) 34%, rgba(148, 83, 166, 0.3) 90%);
+
+            &:hover {
+                background: linear-gradient(223deg, rgba(140, 191, 63, 0.9) 25%, rgba(242, 204, 15, 0.6) 34%, rgba(148, 83, 166, 0.4) 90%);
+            }
+        }
+    }
+
+    @include tablet {
+        flex-wrap: wrap;
+    }
+
+}
+
+div.about-par {
+    @include desktop {
+        width: 100%;
+        padding: 1em;
+        font-size: clamp(0.6rem, 4vw, 1.1rem);
+    }
+}
+
+div.about-par h2 {
+    @include desktop {
+        font-family: $headerFont;
+        text-align: center;
+        font-size: 2.2rem;
+        color: $baseWhite;
+        text-shadow: -1px -1px 4px $baseBlack,
+            1px 1px 4px $baseBlack;
+    }
+}
+
+div.about-img {
+    @include desktop {
+        width: 350px;
+        height: 250px;
+        margin: 0 5px;
+        border: 3px solid $baseBlack;
+        box-shadow: 5px 5px 10px $baseBlack,
+            -5px -5px 10px $baseBlack;
+        overflow: hidden;
+    }
+
+    @include tablet {
+        margin: auto;
+    }
+
+}
+
+div.about-img img {
+    @include desktop {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: 1s;
+        }
+    }
+}
+
+// LaToya info
+
+div.latoya-img {
+    @include desktop {
+        width: 240px;
+        height: 330px;
+        margin: 0 5px;
+        margin-top: 4em;
+        border: 3px solid $baseBlack;
+        box-shadow: 5px 5px 10px $baseBlack,
+            -5px -5px 10px $baseBlack;
+        overflow: hidden;
+    }
+
+    @include tablet {
+        margin: auto;
+    }
+
+}
+
+div.latoya-img img {
+    @include desktop {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: 1s;
+        }
+    }
+}

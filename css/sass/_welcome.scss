@@ -1,0 +1,188 @@
+// Welcome Header & Img
+
+section.welcome-section {
+    @include desktop {
+        margin-top: 145px;
+        // background: url(../images/bg.jpg) no-repeat center center;
+        // background-size: cover;
+        // -webkit-clip-path: polygon(50% 0%, 100% 0, 85% 50%, 100% 100%, 50% 90%, 0 100%, 15% 50%, 0 0);
+    }
+}
+
+#background-video {
+    @include desktop {
+        max-height: 75vh;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.85;
+    }
+}
+
+h2.welcome-header {
+    @include desktop {
+        font-size: 4vw;
+        font-family: $headerFont;
+        text-align: center;
+        margin: 20px auto;
+        color: $baseWhite;
+        text-shadow: 5px 5px 5px $baseBlack,
+            -5px -5px 5px $baseBlack;
+        animation: theHeaderAnimate 3s linear infinite alternate;
+    }
+}
+
+div.welcome-msg {
+    @include desktop {
+        font-size: 9vw;
+        color: rgba(140, 191, 63, 0.2);
+        text-align: center;
+        font-family: $headerSecondFont;
+        animation: headerAnimate 3s linear infinite alternate;
+        text-shadow: 2px 2px 1px $baseBlack,
+            7px 7px 14px $baseBlack,
+            -7px -7px 14px $baseBlack;
+    }
+}
+
+section.homeContentWrapper {
+    @include desktop {
+    padding: 20px;
+    width: 80%;
+    margin: 10px auto;
+    background: linear-gradient(223deg, rgba(140, 191, 63, 0.6) 25%, rgba(242, 204, 15, 0.4) 34%, rgba(148, 83, 166, 0.3) 90%);
+     border: 5px dashed $baseBlack;
+        box-shadow: 15px 15px 10px $baseBlack,
+            -15px -15px 10px $baseBlack;
+    display: flex;
+    flex-flow: row nowrap;
+
+    &:hover,
+    &:focus {
+                background: linear-gradient(223deg, rgba(140, 191, 63, 0.9) 25%, rgba(242, 204, 15, 0.8) 34%, rgba(148, 83, 166, 0.8) 90%);
+            }
+    }
+}
+
+// Welcome Gallery
+
+section.wrap-welcome-gallery {
+    @include desktop {
+        background-color: rgba(13, 13, 13, 0.3);
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 30px;
+        margin: 40px auto;
+    }
+}
+
+div.welcome-imgBox img {
+    @include desktop {
+        text-align: center;
+        height: 215px;
+        max-width: 260px;
+        border-radius: 50% 10px 50% 10px;
+        overflow: hidden;
+        box-shadow: 15px 15px 25px rgba(13, 13, 13, 0.8),
+            -15px -15px 25px rgba(13, 13, 13, 0.8);
+        filter: grayscale(100%);
+        object-fit: cover;
+    }
+
+    &:hover {
+        filter: none;
+        border-radius: 10px 10px 10px 10px;
+        opacity: 1;
+    }
+}
+
+div.welcome-imgBox {
+    @include desktop {
+        // transform: scale(0.9);
+    }
+
+    &:hover {
+        transform: scale(1);
+        transition: 0.6s;
+    }
+}
+
+div.welcome-imgBox:hover img {
+    @include desktop {
+        cursor: zoom-in;
+        transform: scale(1.1);
+        transition: 1s;
+    }
+}
+
+div.welcome-imgBox h3 {
+    @include desktop {
+        width: 260px;
+        position: relative;
+        top: 10px;
+        text-align: center;
+        font-family: $headerFont;
+        font-size: 1.8em;
+        color: $baseWhite;
+        margin: 15px auto;
+        text-shadow: 2px 2px 2px $baseBlack,
+            -2px -2px 2px $baseBlack;
+        height: auto;
+    }
+}
+
+
+div.welcome-imgBox:hover .readMoreBtn {
+    @include desktop {
+        visibility: visible;
+        transition: 0.5s;
+    }
+}
+
+button.readMoreBtn {
+    @include desktop {
+        font-family: $headerFont;
+        width: 90%;
+        text-shadow: 2px 2px 2px $baseBlack,
+            -2px -2px 2px $baseBlack;
+        font-size: 1.5em;
+        padding: 10px 15px;
+        border-radius: 50px 10px 50px 10px;
+        box-shadow: 3px 3px 3px rgba(13, 13, 13, .5);
+        visibility: hidden;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    &:hover {
+        width: 100%;
+        transform: scale(1.1);
+        border-radius: 10px 10px 10px 10px;
+        opacity: 1;
+        visibility: visible;
+        transition: 0.3s;
+    }
+
+    &:active {
+        text-shadow: none;
+        box-shadow: inset 3px 3px 3px rgba(13, 13, 13, .5);
+    }
+}
+
+button.readMoreBtn a {
+    @include desktop {
+        color: $baseWhite;
+        text-decoration: none;
+    }
+}
+
+div.mySlides button.readMoreBtn {
+    @include desktop{
+        width: 100%;
+        visibility: visible;
+        transition: 0.5s;
+    }
+}
